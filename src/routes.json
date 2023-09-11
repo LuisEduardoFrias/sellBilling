@@ -1,0 +1,17 @@
+[
+  { 
+    "name": "Home", 
+    "path": "/", 
+    "isInternal": true
+  },
+  { 
+    "name": "About", 
+    "path": "/about", 
+    "isInternal": true 
+  },
+  { 
+    "name": "Contact", 
+    "path": "/contact", 
+    "isInternal": true
+  }
+]

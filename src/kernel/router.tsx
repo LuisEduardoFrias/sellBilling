@@ -25,7 +25,7 @@ export default function Router(): JSX.Element {
     routes.map((route: _route) => {
       const path = route.isInternal
         ? `../pages/${route.name}`
-        : `./plugins/pages/${route.name}`;
+        : `../plugins/pages/${route.name}`;
 
       import(/* @vite-ignore */ path).then(component =>
         setChildren(prevChildren => [...prevChildren, { path: route.path,

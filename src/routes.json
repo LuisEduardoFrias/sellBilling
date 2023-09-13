@@ -2,16 +2,33 @@
   { 
     "name": "Home", 
     "path": "/", 
-    "isInternal": true
+    "isInternal": true,
+    "icon": "home",
+    "isLoad": false,
+    "sub": []
   },
   { 
     "name": "About", 
     "path": "/about", 
-    "isInternal": true 
+    "isInternal": true,
+    "icon": "checklist_rtl",
+    "isLoad": false,
+    "sub": []
   },
   { 
     "name": "Contact", 
     "path": "/contact", 
-    "isInternal": true
+    "isInternal": true,
+    "icon": "folder_copy",
+    "isLoad": false,
+    "sub": []
+  },
+  { 
+    "name": "PluginNew", 
+    "path": "/plugins", 
+    "isInternal": false,
+    "icon": "plugin",
+    "isLoad": false,
+    "sub": []
   }
 ]

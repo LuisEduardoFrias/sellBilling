@@ -5,28 +5,16 @@ interface IImgProps {
   src: string;
   alt: string;
   className?: string;
-  styles?: CSSProperties;
+  style?: CSSProperties;
 }
 
 export default function Img(img: IImgProps) {
-  const styles : string = img.styles ?? {};
+  const styles : string = img.style ?? {};
   const className : CSSProperties = img.className ?? "";
   
-  const [imageUrl, setImageUrl] = useState("#");
-  
-  useEffect(() => {
-   if(img.src === "") {
-     if (img.src.search("http") === -1) {
-       import(/* @vite-ignore */ `/assets/${img.src}`).then((imageModule) => setImageUrl(imageModule.default  )).catch((error) => console.error(`Error loading   image: ${error}`));
-     } else {
-      setImageUrl(img.src);
-     }
-   }
-  }, [img.src]);
-
   return (
     <Suspense fallback={<LdDualRing error={false} />} >
-      <img className={className} src={imageUrl} alt={img.alt} style={styles}/>
+      <img className={className} src={img.src} alt={img.alt} style={styles}/>
     </Suspense>
   );
 }

@@ -30,5 +30,42 @@
     "icon": "plugin",
     "isLoad": false,
     "sub": []
+  },
+  { 
+    "name": "PluginDetail", 
+    "path": "/plugindetail", 
+    "isInternal": false,
+    "isTool": true,
+    "icon": "plugin",
+    "isLoad": false,
+    "sub": []
+  },
+  {
+    "name":"Calculator", 
+    "isInternal": false,
+    "isTool": true,
+    "icon": "calculate",
+    "isLoad": false
+  },
+  { 
+    "name": "opcion 1", 
+    "path": "/", 
+    "isInternal": false,
+    "userMenu": true,
+    "isLoad": false
+  },
+  { 
+    "name": "opcion 2", 
+    "path": "/about", 
+    "isInternal": false,
+    "userMenu": true,
+    "isLoad": false
+  },
+  { 
+    "name": "opcion 3", 
+    "path": "/contact", 
+    "isInternal": false,
+    "userMenu": true,
+    "isLoad": false
   }
 ]

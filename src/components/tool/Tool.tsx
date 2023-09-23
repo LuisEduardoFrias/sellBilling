@@ -33,6 +33,7 @@ export default function Tool(props: IToolProps): JSX.Element {
     
     const container = document.createElement('div');
     container.setAttribute("id",idIdentification);
+    container.style.position = 'absolute';
     root.appendChild(container);
     
     const close = (id:string) => {
@@ -45,9 +46,11 @@ export default function Tool(props: IToolProps): JSX.Element {
     
     const draggable : JSX.Element = (
         <div style={{
+          
           border:'1px solid black', 
-          borderRadius:'10px 10px',
-          width: '80%',
+          borderRadius:'5px 5px',
+          display: 'inline-block',
+          boxShadow: '0 0 5px 2px gray',
           backgroundColor:'rgba(42,193,255,0.795)',
         }}>
           <div style={{
@@ -59,7 +62,7 @@ export default function Tool(props: IToolProps): JSX.Element {
           }}>
             <div id="tittleContainee" style={{ width:
             '100%'}} onClick={(event) => event.stopPropagation()} >
-              <h1>header</h1>
+              <h1>Tool</h1>
             </div>
             <button type="button" style={{border:'1px solid black',borderRadius:'15px 15px', display:'flex', justifyContent:
             'center', alignItems: 'center', width:'25px', height:'25px', backgroundColor:'rgba(0,0,0,0)'}}
